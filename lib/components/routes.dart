@@ -5,5 +5,5 @@ class AppRoute {
   static String course = '/crse';
   static String admin = '/admn';
   static String admission = '/admson';
-  static String contact = '/cntcts';
+  static String more = '/more';
 }

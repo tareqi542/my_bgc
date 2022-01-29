@@ -137,11 +137,11 @@ class HomePage extends StatelessWidget {
                 ),
                 myContainer(
                   context: context,
-                  name: 'Contacts',
+                  name: 'More',
                   color: Colors.amber,
-                  icon: Icons.contact_phone,
+                  icon: Icons.more_horiz,
                   ontap: () {
-                    Navigator.pushNamed(context, AppRoute.contact);
+                    Navigator.pushNamed(context, AppRoute.more);
                     print('tappedcontainer');
                   },
                 ),

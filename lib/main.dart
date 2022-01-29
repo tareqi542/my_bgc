@@ -5,6 +5,7 @@ import 'package:my_bgc/screen/admission.dart';
 import 'package:my_bgc/screen/contacts.dart';
 import 'package:my_bgc/screen/courses.dart';
 import 'package:my_bgc/screen/department.dart';
+import 'package:my_bgc/screen/more.dart';
 import 'package:my_bgc/screen/mycampus.dart';
 import 'screen/homepage.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         AppRoute.course: (Context) => MyCourses(),
         AppRoute.admin: (Context) => MyAdminstration(),
         AppRoute.admission: (Context) => MyAdmission(),
-        AppRoute.contact: (Context) => MyContacts(),
+        AppRoute.more: (Context) => MoreView(),
       },
     );
   }

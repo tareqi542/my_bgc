@@ -25,7 +25,7 @@ class CourseModel {
             json["subject_list"].map((x) => SubjectList.fromJson(x))),
       );
 
-  get bookList => bookList;
+  
 }
 
 class SubjectList {

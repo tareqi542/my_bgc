@@ -31,17 +31,18 @@ class _CourseDetailsState extends State<CourseDetails> {
           title: Text('${widget.courseModel.couresName}'),
         ),
         body: ListView.builder(
+          
           itemCount: widget.courseModel.subjectList!.length,
           itemBuilder: (context, index) {
             final SubjectList subject =
                 widget.courseModel.subjectList!.elementAt(index);
             return InkWell(
               onTap: () {
+             
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>
-                          SubjectView(courseModel: subjectList.elementAt(index)),
+                      builder: (context) => SubjectView(bookList: subject.bookList!),
                     ));
               },
               child: Card(

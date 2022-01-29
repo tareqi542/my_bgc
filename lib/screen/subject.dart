@@ -2,51 +2,72 @@ import 'package:flutter/material.dart';
 import 'package:my_bgc/models/course_model.dart';
 
 class SubjectView extends StatelessWidget {
-  final CourseModel courseModel;
-  const SubjectView({Key? key, required this.courseModel}) : super(key: key);
+  final List<BookList> bookList;
+  const SubjectView({Key? key, required this.bookList}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // final book = bookList.elementAt(index);
+    // print(bookList.length);
     return Scaffold(
         appBar: AppBar(
-          title: Text('${courseModel.subjectList}'),
+          title: Text(''),
         ),
         body: ListView.builder(
-          itemCount: courseModel.bookList!.length,
+          itemCount: bookList.length,
           itemBuilder: (context, index) {
-            final BookList book = courseModel.bookList.elementAt(index);
-
-            return Card(
-              child: Container(
-                  height: 100,
-                  decoration: BoxDecoration(color: Colors.amber.shade50),
-                  child: ListTile(
-                    title: Column(
-                      children: [
-                        Text(
-                          '${book.bookName1}',
-                          // style: TextStyle(
-                          //     fontSize: 25, fontWeight: FontWeight.bold),
-                        ),
-                        Text('${book.bookName1}'),
-                        Text('${book.bookName2}'),
-                        Text('${book.bookName3}'),
-                        Text('${book.bookName4}'),
-                        Text('${book.bookName5}'),
-                        Text('${book.bookName7}'),
-                        Text('${book.bookName8}'),
-                        Text('${book.bookName9}'),
-                        Text('${book.bookName10}'),
-                      ],
+            return Column(
+              children: [
+                Text(
+                  '1st Year',
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                ),
+                Container(
+                    decoration: BoxDecoration(
+                      color: Colors.amber.shade50,
                     ),
-                    subtitle: Text(
-                      'writer or details',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
-                    trailing: Icon(Icons.bookmark),
-                  )),
+                    child: ListTile(
+                      title: Column(
+                        
+                        children: [
+                          Text(
+                            '${bookList.elementAt(index).bookName1}',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            '${bookList.elementAt(index).bookName2}',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            '${bookList.elementAt(index).bookName3}',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            '${bookList.elementAt(index).bookName4}',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            '${bookList.elementAt(index).bookName5}',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            '${bookList.elementAt(index).bookName6}',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            '${bookList.elementAt(index).bookName7}',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      trailing: Icon(Icons.bookmark),
+                    )),
+              ],
             );
+            // for get book name of booklist
+            // Text('${bookList.elementAt(index).bookName1}');
           },
         ));
   }

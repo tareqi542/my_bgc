@@ -9,10 +9,7 @@ class MyImageSlider extends StatefulWidget {
 }
 
 class _MyImageSliderState extends State<MyImageSlider> {
-  // List<String> images = [
-  //   "https://images.pexels.com/photos/2305098/pexels-photo-2305098.jpeg",
-  //   "https://images.pexels.com/photos/6146978/pexels-photo-6146978.jpeg"
-  // ];
+  
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
@@ -23,8 +20,7 @@ class _MyImageSliderState extends State<MyImageSlider> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
-                    image: NetworkImage(
-                        "https://images.pexels.com/photos/6146978/pexels-photo-6146978.jpeg"),
+                    image: AssetImage("assets/image/bgc_mujib.jpg"),
                     fit: BoxFit.cover)),
           ),
           Container(
@@ -33,8 +29,7 @@ class _MyImageSliderState extends State<MyImageSlider> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
-                    image: NetworkImage(
-                        "https://images.pexels.com/photos/6146935/pexels-photo-6146935.jpeg"),
+                    image: AssetImage("assets/image/bgc.jpg"),
                     fit: BoxFit.cover)),
           )
         ],

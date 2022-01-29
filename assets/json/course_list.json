@@ -3,16 +3,16 @@
         "coures_name": "BSC",
         "subject_list":[
         {"id": 1,
-         "subj_name": "Math",
+         "subj_name": "Mathematics",
          "book_list":[
            { "id":1,
-            "book_name1": "book_name",
-            "book_name2": "book_name",
-            "book_name3": "book_name",
-            "book_name4": "book_name",
-            "book_name5":"book_name",
-            "book_name6":"book_name",
-            "book_name7":"book_name",
+            "book_name1": "Bangladesh History",
+            "book_name2": "Calculus 1",
+            "book_name3": "Geometry",
+            "book_name4": "Fundamentals",
+            "book_name5":"Chemistry 1",
+            "book_name6":"Physics 1",
+            "book_name7":"Physics 2",
             "book_name8":"book_name",
             "book_name9":"book_name",
             "book_name10":"book_name"}
@@ -30,16 +30,16 @@
         "subj_name": "subj_name2",
         "book_list":[
         { "id":1,
-        "book_name1": "book_name",
-        "book_name2": "book_name",
-        "book_name3": "book_name",
-        "book_name4": "book_name",
-        "book_name5":"book_name",
-        "book_name6":"book_name",
-        "book_name7":"book_name",
-        "book_name8":"book_name",
-        "book_name9":"book_name",
-        "book_name10":"book_name"}    
+        "book_name1": "book_name1",
+        "book_name2": "book_name2",
+        "book_name3": "book_name3",
+        "book_name4": "book_name4",
+        "book_name5":"book_name5",
+        "book_name6":"book_name6",
+        "book_name7":"book_name7",
+        "book_name8":"book_name8",
+        "book_name9":"book_name9",
+        "book_name10":"book_name10"}    
     ] 
     }
  ]
