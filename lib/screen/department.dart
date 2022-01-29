@@ -25,7 +25,9 @@ class _DepartmentViewState extends State<DepartmentView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: Text('Departmens'),
+        ),
         body: ListView.builder(
           itemCount: deptList.length,
           itemBuilder: (context, index) {
@@ -46,21 +48,24 @@ class _DepartmentViewState extends State<DepartmentView> {
                 child: ListTile(
                   textColor: Colors.black,
                   leading: CircleAvatar(
-                      backgroundColor: Colors.white.withOpacity(0.8),
-                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.black45.withOpacity(0.3),
+                      foregroundColor: Colors.white,
                       child: Text('${deptList[index].id}')),
                   title: Text(
                     '${deptList[index].deptName}',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 24,
+                    ),
                   ),
                   subtitle: Text(
                     'a dept of sceince faculty',
                     textAlign: TextAlign.justify,
-                    style: TextStyle(fontSize: 16, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
                   ),
                   trailing: Icon(
-                    Icons.info,
-                    color: Colors.white,
+                    Icons.home_work_outlined,
                   ),
                 ),
               ),

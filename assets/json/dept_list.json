@@ -29,6 +29,14 @@
         "email":""
        },
        { "id":4,
+        "name": "Mrs. Shafiqul Islam",
+        "img": "img_path",
+        "design": "Lecturer",
+        "education": "B.Sc",
+        "phone":"",
+        "email":""
+       },
+       { "id":5,
         "name": "Khalilur Rahman",
         "img": "img_path",
         "design": "Lecturer",

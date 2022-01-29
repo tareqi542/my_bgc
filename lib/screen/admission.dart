@@ -6,7 +6,9 @@ class MyAdmission extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Admission'),
+      ),
       body: Text('MyAdmission'),
     );
   }

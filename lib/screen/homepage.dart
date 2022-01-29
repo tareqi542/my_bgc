@@ -33,16 +33,16 @@ class HomePage extends StatelessWidget {
               title: const Text('Home'),
               leading: Icon(Icons.home),
               onTap: () {
-                // Update the state of the app.
+                Navigator.pushNamed(context, AppRoute.initRoute);
                 // ...
               },
             ),
             ListTile(
-              title: const Text('Search'),
-              leading: Icon(Icons.search),
+              title: const Text('Share'),
+              leading: Icon(Icons.share),
               onTap: () {
                 // Update the state of the app.
-                // ...
+                Navigator.pushNamed(context, AppRoute.more);
               },
             ),
             ListTile(
@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
               leading: Icon(Icons.exit_to_app),
               onTap: () {
                 // Update the state of the app.
-                // ...
+                Navigator.pop(context);
               },
             ),
           ],

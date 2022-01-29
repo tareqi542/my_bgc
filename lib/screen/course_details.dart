@@ -31,31 +31,37 @@ class _CourseDetailsState extends State<CourseDetails> {
           title: Text('${widget.courseModel.couresName}'),
         ),
         body: ListView.builder(
-          
           itemCount: widget.courseModel.subjectList!.length,
           itemBuilder: (context, index) {
             final SubjectList subject =
                 widget.courseModel.subjectList!.elementAt(index);
             return InkWell(
               onTap: () {
-             
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SubjectView(bookList: subject.bookList!),
+                      builder: (context) =>
+                          SubjectView(bookList: subject.bookList!),
                     ));
               },
               child: Card(
                 child: Container(
+                    padding: EdgeInsets.all(8.0),
                     height: 100,
                     decoration: BoxDecoration(color: Colors.amber.shade50),
                     child: ListTile(
+                      textColor: Colors.black,
+                      leading: CircleAvatar(
+                          backgroundColor: Colors.black45.withOpacity(0.3),
+                          foregroundColor: Colors.white,
+                          child: Text('${subject.id}')),
                       title: Text(
                         '${subject.subjName}',
                         style: TextStyle(
                             fontSize: 25, fontWeight: FontWeight.bold),
                       ),
-                      trailing: Icon(Icons.bookmark),
+                      subtitle: Text('A 4 years long course'),
+                      trailing: Icon(Icons.menu_book_outlined),
                     )),
               ),
             );

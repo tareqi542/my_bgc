@@ -49,23 +49,27 @@ class _MyCoursesState extends State<MyCourses> {
                 child: ListTile(
                   textColor: Colors.black,
                   leading: CircleAvatar(
-                      backgroundColor: Colors.white.withOpacity(0.8),
-                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.black45.withOpacity(0.3),
+                      foregroundColor: Colors.white,
                       child: Text('${courseList[index].id}')),
                   title: Text(
                     '${courseList[index].couresName}',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 24,
+                    ),
                   ),
                   // For add subjects
                   // '${courseList[index].subjectList![index].subjName}'
                   subtitle: Text(
-                    'a dept of sceince faculty',
+                    'The degree you want!',
                     textAlign: TextAlign.justify,
-                    style: TextStyle(fontSize: 16, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
                   ),
                   trailing: Icon(
-                    Icons.book,
-                    color: Colors.white,
+                    Icons.school,
+                    size: 40,
                   ),
                 ),
               ),

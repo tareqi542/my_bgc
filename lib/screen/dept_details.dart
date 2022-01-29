@@ -21,6 +21,7 @@ class DepartmentDetails extends StatelessWidget {
                 height: 100,
                 decoration: BoxDecoration(color: Colors.amber.shade50),
                 child: ListTile(
+                  textColor: Colors.black,
                   title: Text(
                     '${teacher.name}',
                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),

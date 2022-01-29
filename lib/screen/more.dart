@@ -1,8 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:my_bgc/components/mycontainer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class MoreView extends StatelessWidget {
+class MoreView extends StatefulWidget {
   const MoreView({Key? key}) : super(key: key);
+
+  @override
+  State<MoreView> createState() => _MoreViewState();
+}
+
+class _MoreViewState extends State<MoreView> {
+  final String _url = 'https://mujib100.gov.bd/';
+
+  void _launchURL() async {
+    if (await canLaunch(_url)) {
+      await launch(_url);
+    } else {
+      throw 'could not launch $_url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +38,10 @@ class MoreView extends StatelessWidget {
                   color: Colors.amber,
                   icon: Icons.contacts,
                   ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.campus);
+                    setState(() {
+                      _launchURL();
+                    });
+
                     print('tappedcontainer');
                   },
                 ),

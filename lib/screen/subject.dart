@@ -19,7 +19,7 @@ class SubjectView extends StatelessWidget {
             return Column(
               children: [
                 Text(
-                  '1st Year',
+                  '${bookList[index].id} year',
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
                 Container(
@@ -28,7 +28,6 @@ class SubjectView extends StatelessWidget {
                     ),
                     child: ListTile(
                       title: Column(
-                        
                         children: [
                           Text(
                             '${bookList.elementAt(index).bookName1}',
