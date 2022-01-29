@@ -1,0 +1,110 @@
+[
+    {   "id":1,
+        "coures_name": "BSC",
+        "subject_list":[
+        {"id": 1,
+         "subj_name": "Math",
+         "book_list":[
+           { "id":1,
+            "book_name1": "book_name",
+            "book_name2": "book_name",
+            "book_name3": "book_name",
+            "book_name4": "book_name",
+            "book_name5":"book_name",
+            "book_name6":"book_name",
+            "book_name7":"book_name",
+            "book_name8":"book_name",
+            "book_name9":"book_name",
+            "book_name10":"book_name"}
+            
+        ]
+      }
+    
+    ]
+  },
+
+    {   "id":2,
+    "coures_name": "coures_name",
+    "subject_list":[
+       {"id": 1,
+        "subj_name": "subj_name2",
+        "book_list":[
+        { "id":1,
+        "book_name1": "book_name",
+        "book_name2": "book_name",
+        "book_name3": "book_name",
+        "book_name4": "book_name",
+        "book_name5":"book_name",
+        "book_name6":"book_name",
+        "book_name7":"book_name",
+        "book_name8":"book_name",
+        "book_name9":"book_name",
+        "book_name10":"book_name"}    
+    ] 
+    }
+ ]
+},
+{   "id":3,
+    "coures_name": "coures_name",
+    "subject_list":[
+    {"id": 1,
+     "subj_name": "subj_name3",
+     "book_list":[
+       { "id":1,
+        "book_name1": "book_name",
+        "book_name2": "book_name",
+        "book_name3": "book_name",
+        "book_name4": "book_name",
+        "book_name5":"book_name",
+        "book_name6":"book_name",
+        "book_name7":"book_name",
+        "book_name8":"book_name",
+        "book_name9":"book_name",
+        "book_name10":"book_name"}
+        ]
+    }
+  ]
+},
+{   "id":3,
+  "coures_name": "coures_name",
+  "subject_list":[
+  {"id": 1,
+   "subj_name": "subj_name4",
+   "book_list":[
+     { "id":1,
+      "book_name1": "book_name",
+      "book_name2": "book_name",
+      "book_name3": "book_name",
+      "book_name4": "book_name",
+      "book_name5":"book_name",
+      "book_name6":"book_name",
+      "book_name7":"book_name",
+      "book_name8":"book_name",
+      "book_name9":"book_name",
+      "book_name10":"book_name"}
+      ]
+  }
+]
+},
+{   "id":3,
+  "coures_name": "coures_name",
+  "subject_list":[
+  {"id": 1,
+   "subj_name": "subj_name5",
+   "book_list":[
+     { "id":1,
+      "book_name1": "book_name",
+      "book_name2": "book_name",
+      "book_name3": "book_name",
+      "book_name4": "book_name",
+      "book_name5":"book_name",
+      "book_name6":"book_name",
+      "book_name7":"book_name",
+      "book_name8":"book_name",
+      "book_name9":"book_name",
+      "book_name10":"book_name"}
+      ]
+  }
+]
+}
+]

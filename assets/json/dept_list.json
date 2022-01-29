@@ -1,0 +1,317 @@
+[
+    {
+        "id": 1,
+    "dept_name": "Math Department",
+    "img":"img_path",
+    "teacher_list":[
+       { "id":1,
+        "name": "Md Kuddus",
+        "img": "img_path",
+        "design": "Dept. Head",
+        "education": "B.Sc,JU",
+        "phone":"",
+        "email":""
+       },
+       { "id":2,
+        "name": "Md Safiqul Islam",
+        "img": "img_path",
+        "design": "Assistant Professor",
+        "education": "B.Sc, NU",
+        "phone":"",
+        "email":""
+       },
+       { "id":3,
+        "name": "Saiful Islam Khan",
+        "img": "img_path",
+        "design": "Assistant Professor",
+        "education": "B.Sc",
+        "phone":"",
+        "email":""
+       },
+       { "id":4,
+        "name": "Khalilur Rahman",
+        "img": "img_path",
+        "design": "Lecturer",
+        "education": "B.Sc",
+        "phone":"",
+        "email":""
+       }
+        
+    ]
+    },
+    {
+        "id": 2,
+    "dept_name": "Physics Department",
+    "teacher_list":[
+       { "id":1,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":2,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":3,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":4,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":5,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":6,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       }
+        
+    ]
+    },
+    {
+        "id": 3,
+    "dept_name": "Chem Department",
+    "teacher_list":[
+       { "id":1,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":2,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":3,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":4,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":5,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":6,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       }
+        
+    ]
+    },
+    {
+        "id": 4,
+    "dept_name": "Philosophy Department",
+    "teacher_list":[
+       { "id":1,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":2,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":3,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":4,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":5,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":6,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       }
+        
+    ]
+    },
+    {
+        "id": 5,
+    "dept_name": "English Department",
+    "teacher_list":[
+       { "id":1,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":2,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":3,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":4,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":5,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":6,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       }
+        
+    ]
+    },
+    {
+        "id": 6,
+    "dept_name": "Bangla Department",
+    "teacher_list":[
+       { "id":1,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":2,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":3,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":4,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":5,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       },
+       { "id":6,
+        "name": "TechName",
+        "img": "img_path",
+        "design": "Designation",
+        "education": "edu_background",
+        "phone":"",
+        "email":""
+       }
+        
+    ]
+    }
+]
