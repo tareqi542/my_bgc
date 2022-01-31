@@ -23,7 +23,7 @@ This application is about Brahmanbaria Govt. College, a renown college in Bangla
 
 ## Try out BGC?
 
-Android: [Download](https://github.com/afjal-al-sayed/shikkha_dex/raw/master/release/shikkha_dex.apk)
+Android: [Download](https://drive.google.com/drive/folders/1TXk2doYRpkpVVYC6oYfPT-Uxcpj9_E8v)
 
 ## Developer
 
