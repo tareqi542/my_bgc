@@ -1,4 +1,4 @@
-# ShikkhaDex (শিক্ষাডেক্স)
+# BGC (Brahmanbria Govt. College)
 
 This application is about Brahmanbaria Govt. College, a renown college in Banglasesh.
 
@@ -36,4 +36,4 @@ All rights reserved by Tarequl Islam. Copyright &copy; 2022.
 <br/><small><i>This app may contain other brand’s logos or titles. These are the properties of their respective owners. BGC neither has any relation to these brands nor is associated with them. These assets are used for identification purposes only.</i></small>
 
 ### Note
- <small>ShikkhaDex contains links of external websites inside it. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</small>
+ <small>BGC contains links of external websites inside it. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</small>
