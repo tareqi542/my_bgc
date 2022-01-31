@@ -25,7 +25,11 @@ assets/screenshots -->
 
 ## Try out BGC?
 
+<<<<<<< HEAD
 Android: [Download apk](https://drive.google.com/file/d/1LezTVTtj2i9Bv2u2g2YXMi025HNKGtSR/view?usp=sharing)
+=======
+Android: [Download](https://drive.google.com/drive/folders/1TXk2doYRpkpVVYC6oYfPT-Uxcpj9_E8v)
+>>>>>>> 419533ef85fac440848304f1f6d64a3896e32e54
 
 ## Developer
 
