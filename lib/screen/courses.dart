@@ -54,9 +54,7 @@ class _MyCoursesState extends State<MyCourses> {
                       child: Text('${courseList[index].id}')),
                   title: Text(
                     '${courseList[index].couresName}',
-                    style: TextStyle(
-                      fontSize: 24,
-                    ),
+                     style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                   ),
                   // For add subjects
                   // '${courseList[index].subjectList![index].subjName}'

@@ -66,6 +66,7 @@ class _DepartmentViewState extends State<DepartmentView> {
                   ),
                   trailing: Icon(
                     Icons.home_work_outlined,
+                     size: 40,
                   ),
                 ),
               ),

@@ -26,8 +26,17 @@ class DepartmentDetails extends StatelessWidget {
                     '${teacher.name}',
                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
-                  subtitle: Text('${teacher.design}'),
-                  trailing: Icon(Icons.account_box),
+                  subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text('${teacher.design}'),
+                        Text('${teacher.education}')
+                      ]),
+                  trailing: Icon(
+                    Icons.call,
+                    size: 25,
+                  ),
                 )),
           );
         },

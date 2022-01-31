@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_bgc/components/mycontainer.dart';
+import 'package:my_bgc/config/helper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MoreView extends StatefulWidget {
@@ -10,20 +11,29 @@ class MoreView extends StatefulWidget {
 }
 
 class _MoreViewState extends State<MoreView> {
-  final String _url = 'https://mujib100.gov.bd/';
-
-  void _launchURL() async {
-    if (await canLaunch(_url)) {
-      await launch(_url);
+  final String mujib100Web = 'https://mujib100.gov.bd/';
+  final String bdPortal = ' https://bangladesh.gov.bd/index.php';
+  final String nuWeb = 'https://nu.ac.bd/';
+  final String bgcWeb = 'http://bgc.edu.bd/';
+  final String eduMins = 'http://www.moedu.gov.bd/';
+  final String noticWeb = 'https://web.facebook.com/groups/BGColl';
+  final String livWeb =
+      'https://web.facebook.com/Brahmanbaria-Govt-College-815319538637623';
+  final String contactWeb = 'mailto:tarequlislam542@yahoo.com';
+  void _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
     } else {
-      throw 'could not launch $_url';
+      throw 'could not launch $url';
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Impotants Links"),
+      ),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -37,22 +47,31 @@ class _MoreViewState extends State<MoreView> {
                   name: 'Mujib 100',
                   color: Colors.amber,
                   icon: Icons.contacts,
-                  ontap: () {
-                    setState(() {
-                      _launchURL();
-                    });
-
-                    print('tappedcontainer');
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(mujib100Web);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
                   },
                 ),
                 myContainer(
                   context: context,
-                  name: 'WebSite', //all syllabus here
+                  name: 'BanglaDesh',
                   color: Colors.amber,
-                  icon: Icons.school,
-                  ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.course);
-                    print('tappedcontainer');
+                  icon: Icons.web,
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(bdPortal);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
                   },
                 ),
               ],
@@ -63,22 +82,34 @@ class _MoreViewState extends State<MoreView> {
                 myContainer(
                   context: context,
                   name: 'NU Web',
+                  //
                   color: Colors.amber,
-                  icon: Icons.home_work_outlined,
-                  ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.dept);
-
-                    print('tappedcontainer');
+                  icon: Icons.home_work,
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(nuWeb);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
                   },
                 ),
                 myContainer(
                   context: context,
-                  name: 'Edu Ministry',
+                  name: 'BGC Web', //all syllabus here
                   color: Colors.amber,
-                  icon: Icons.admin_panel_settings,
-                  ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.admin);
-                    print('tappedcontainer');
+                  icon: Icons.school,
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(bgcWeb);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
                   },
                 ),
               ],
@@ -86,24 +117,36 @@ class _MoreViewState extends State<MoreView> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+                myContainer(
+                  context: context,
+                  name: 'Edu. Ministry',
+                  color: Colors.amber,
+                  icon: Icons.admin_panel_settings,
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(eduMins);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
+                  },
+                ),
                 myContainer(
                   context: context,
                   name: 'Notice Board',
                   color: Colors.amber,
                   icon: Icons.notifications,
-                  ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.admission);
-                    print('tappedcontainer');
-                  },
-                ),
-                myContainer(
-                  context: context,
-                  name: 'Live Class',
-                  color: Colors.amber,
-                  icon: Icons.live_help,
-                  ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.contact);
-                    print('tappedcontainer');
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(noticWeb);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
                   },
                 ),
               ],
@@ -113,12 +156,18 @@ class _MoreViewState extends State<MoreView> {
               children: [
                 myContainer(
                   context: context,
-                  name: 'BanglaDesh',
+                  name: 'Live Class',
                   color: Colors.amber,
-                  icon: Icons.details,
-                  ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.admission);
-                    print('tappedcontainer');
+                  icon: Icons.live_help,
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(livWeb);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
                   },
                 ),
                 myContainer(
@@ -126,9 +175,15 @@ class _MoreViewState extends State<MoreView> {
                   name: 'Contacts',
                   color: Colors.amber,
                   icon: Icons.contact_phone,
-                  ontap: () {
-                    // Navigator.pushNamed(context, AppRoute.contact);
-                    print('tappedcontainer');
+                  ontap: () async {
+                    if (await initConnectivity()) {
+                      _launchURL(contactWeb);
+                      print('tappedcontainer');
+                    } else {
+                      final snackBar = SnackBar(
+                          content: Text("Please Connect With Internet"));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
                   },
                 ),
               ],

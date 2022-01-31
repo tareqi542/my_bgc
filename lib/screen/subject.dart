@@ -9,9 +9,10 @@ class SubjectView extends StatelessWidget {
   Widget build(BuildContext context) {
     // final book = bookList.elementAt(index);
     // print(bookList.length);
+
     return Scaffold(
         appBar: AppBar(
-          title: Text(''),
+          title: Text("Books You Have To Study"),
         ),
         body: ListView.builder(
           itemCount: bookList.length,
@@ -20,7 +21,7 @@ class SubjectView extends StatelessWidget {
               children: [
                 Text(
                   '${bookList[index].id} year',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800),
                 ),
                 Container(
                     decoration: BoxDecoration(
@@ -31,13 +32,11 @@ class SubjectView extends StatelessWidget {
                         children: [
                           Text(
                             '${bookList.elementAt(index).bookName1}',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold),
+                            style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
                             '${bookList.elementAt(index).bookName2}',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold),
+                            style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
                             '${bookList.elementAt(index).bookName3}',

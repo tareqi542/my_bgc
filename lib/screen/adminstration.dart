@@ -10,42 +10,48 @@ class MyAdminstration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //obbject here
-    String img = 'assets/image/bgc_logo.png';
+    String img = 'assets/image/man.png';
     List<Admins> adminList = [
       Admins(
         id: 1,
         img: img,
-        name: "Mrs. Islam",
+        name: "Dr. Mohammad Shah Alam",
         designation: "Principal",
       ),
       Admins(
         id: 2,
         img: img,
-        name: "Mrs. Islam",
-        designation: "Principal",
+        name: "Mr. Bibutibhushan Debnath",
+        designation: "Vice-Principal",
       ),
       Admins(
         id: 3,
-        name: "Mrs. Islam",
+        name: "Abdul Wahed",
         img: img,
-        designation: "Principal",
+        designation: "Head of examniner",
       ),
       Admins(
         id: 4,
-        name: "Mrs. Islam",
+        name: "Mr.Talukder ",
         img: img,
-        designation: "Principal",
+        designation: "Sindicate Member",
       ),
       Admins(
         id: 5,
-        name: "Mrs. Islam",
+        name: "Mr. Hasan",
         img: img,
-        designation: "Principal",
+        designation: "Sindicate Member",
+      ),
+      Admins(
+        id: 6,
+        name: "Mr. Islam",
+        img: img,
+        designation: "Sindicate Member",
       ),
     ];
     return Scaffold(
         appBar: AppBar(
-          title: Text('Admindtration'),
+          title: Text('Adminstration'),
         ),
         body: ListView.builder(
           itemCount: adminList.length,

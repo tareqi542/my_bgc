@@ -5,15 +5,15 @@
     "img":"img_path",
     "teacher_list":[
        { "id":1,
-        "name": "Md Kuddus",
+        "name": "Mohammad Abdul Kuddus",
         "img": "img_path",
-        "design": "Dept. Head",
+        "design": "Head of th department",
         "education": "B.Sc,JU",
         "phone":"",
         "email":""
        },
        { "id":2,
-        "name": "Md Safiqul Islam",
+        "name": "Md. Safiqul Islam",
         "img": "img_path",
         "design": "Assistant Professor",
         "education": "B.Sc, NU",

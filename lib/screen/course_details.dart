@@ -46,9 +46,12 @@ class _CourseDetailsState extends State<CourseDetails> {
               },
               child: Card(
                 child: Container(
-                    padding: EdgeInsets.all(8.0),
-                    height: 100,
-                    decoration: BoxDecoration(color: Colors.amber.shade50),
+                    margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    height: 120.0,
+                    decoration: BoxDecoration(
+                        color: Colors.amber,
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
                     child: ListTile(
                       textColor: Colors.black,
                       leading: CircleAvatar(
@@ -58,10 +61,14 @@ class _CourseDetailsState extends State<CourseDetails> {
                       title: Text(
                         '${subject.subjName}',
                         style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
+                          fontSize: 25,
+                        ),
                       ),
                       subtitle: Text('A 4 years long course'),
-                      trailing: Icon(Icons.menu_book_outlined),
+                      trailing: Icon(
+                        Icons.menu_book_outlined,
+                        size: 40,
+                      ),
                     )),
               ),
             );

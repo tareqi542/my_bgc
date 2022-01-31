@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_bgc/components/routes.dart';
 import 'package:my_bgc/screen/adminstration.dart';
 import 'package:my_bgc/screen/admission.dart';
-import 'package:my_bgc/screen/contacts.dart';
 import 'package:my_bgc/screen/courses.dart';
 import 'package:my_bgc/screen/department.dart';
 import 'package:my_bgc/screen/more.dart';
