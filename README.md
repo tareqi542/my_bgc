@@ -25,7 +25,7 @@ assets/screenshots -->
 
 ## Try out BGC?
 
-<<<<<<< HEAD
+<<<<<<<
 Android: [Download apk](https://drive.google.com/file/d/1LezTVTtj2i9Bv2u2g2YXMi025HNKGtSR/view?usp=sharing)
 
 
